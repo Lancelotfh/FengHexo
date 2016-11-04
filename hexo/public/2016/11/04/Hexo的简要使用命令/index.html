@@ -3,14 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>封浩的个人网站</title>
+  <title>Hexo的简要使用命令 | 封浩的个人网站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="封浩的个人网站">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="第一次使用Hexo应该知道新建文章1$ hexo new &quot;Title&quot;
+启动服务1$ hexo server
+生成静态文件1$ hexo generate
+部署站点1$ hexo deploy
+希望自己markdown越写越熟练">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo的简要使用命令">
+<meta property="og:url" content="http://yoursite.com/2016/11/04/Hexo的简要使用命令/index.html">
 <meta property="og:site_name" content="封浩的个人网站">
+<meta property="og:description" content="第一次使用Hexo应该知道新建文章1$ hexo new &quot;Title&quot;
+启动服务1$ hexo server
+生成静态文件1$ hexo generate
+部署站点1$ hexo deploy
+希望自己markdown越写越熟练">
+<meta property="og:updated_time" content="2016-11-04T10:57:26.832Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="封浩的个人网站">
+<meta name="twitter:title" content="Hexo的简要使用命令">
+<meta name="twitter:description" content="第一次使用Hexo应该知道新建文章1$ hexo new &quot;Title&quot;
+启动服务1$ hexo server
+生成静态文件1$ hexo generate
+部署站点1$ hexo deploy
+希望自己markdown越写越熟练">
   
     <link rel="alternate" href="/atom.xml" title="封浩的个人网站" type="application/atom+xml">
   
@@ -63,48 +79,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-网页加载缓慢" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/04/网页加载缓慢/" class="article-date">
-  <time datetime="2016-11-04T11:25:37.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/网页加载缓慢/">网页加载缓慢</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="原因出在使用Google字库以及CSS"><a href="#原因出在使用Google字库以及CSS" class="headerlink" title="原因出在使用Google字库以及CSS"></a>原因出在使用Google字库以及CSS</h2><h3 id="解决办法：使用CDN加速的字库以及CSS"><a href="#解决办法：使用CDN加速的字库以及CSS" class="headerlink" title="解决办法：使用CDN加速的字库以及CSS"></a>解决办法：使用CDN加速的字库以及CSS</h3><h4 id="详细解决："><a href="#详细解决：" class="headerlink" title="详细解决："></a>详细解决：</h4><hr>
-<h5 id="1-更换字库引用位置"><a href="#1-更换字库引用位置" class="headerlink" title="1.更换字库引用位置"></a>1.更换字库引用位置</h5><p>在hexo\themes\主题\source\css_base\variable.styl中<br>找到<b>import url(“//fonts.googleapis.com/css?family=Lato:400,400italic”)</b>这句并注释掉<br><br>点击原文(<a href="http://www.jianshu.com/p/ffcdc4fec6ec" target="_blank" rel="external">http://www.jianshu.com/p/ffcdc4fec6ec</a>)<br><br></p>
-<h4 id="2-更换jQuery库的引用位置"><a href="#2-更换jQuery库的引用位置" class="headerlink" title="2.更换jQuery库的引用位置"></a>2.更换jQuery库的引用位置</h4><p>在hexo\hemes\主题\source\layout_partial\after-footer.ejs中将<br>    <b>ajax.googleapis.com/ajax/libs/jquery/x.x.x/jquery.min.js</b>中的链接，替换成CDN加速的链接。<br><br><a href="http://www.jianshu.com/p/ffcdc4fec6ec" target="_blank" rel="external">点击原文</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/04/网页加载缓慢/" data-id="civ3ppy4k0001l4h7kejvn8tb" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Hexo的简要使用命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Hexo的简要使用命令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/04/Hexo的简要使用命令/" class="article-date">
   <time datetime="2016-11-04T10:42:08.000Z" itemprop="datePublished">2016-11-04</time>
@@ -117,8 +92,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/Hexo的简要使用命令/">Hexo的简要使用命令</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo的简要使用命令
     </h1>
   
 
@@ -141,10 +116,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2016/11/04/网页加载缓慢/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          网页加载缓慢
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
+</article>
 
 </section>
         
