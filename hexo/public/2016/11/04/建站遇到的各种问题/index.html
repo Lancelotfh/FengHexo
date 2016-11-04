@@ -3,14 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>封浩的个人网站</title>
+  <title>建站遇到的各种问题 | 封浩的个人网站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="封浩的个人网站">
-<meta property="og:url" content="http://fenghaos.site/index.html">
+  <meta name="description" content="服务器服务器是腾讯云服务器，选用系统是Windows server2012（有点后悔，应该选择Ubuntu14.04），域名是腾讯新网旗下购买的cn域名，以及阿里万网的site域名，前缀都是fenghaos。之所以选择腾讯云服务器，是因为价格适中，相同价位配置也比阿里云服务器更高。
+服务器环境如何连接服务器1.使用微软的远程桌面功能2.使用FileZilla
+服务器上安装git与windows桌面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建站遇到的各种问题">
+<meta property="og:url" content="http://fenghaos.site/2016/11/04/建站遇到的各种问题/index.html">
 <meta property="og:site_name" content="封浩的个人网站">
+<meta property="og:description" content="服务器服务器是腾讯云服务器，选用系统是Windows server2012（有点后悔，应该选择Ubuntu14.04），域名是腾讯新网旗下购买的cn域名，以及阿里万网的site域名，前缀都是fenghaos。之所以选择腾讯云服务器，是因为价格适中，相同价位配置也比阿里云服务器更高。
+服务器环境如何连接服务器1.使用微软的远程桌面功能2.使用FileZilla
+服务器上安装git与windows桌面">
+<meta property="og:updated_time" content="2016-11-04T12:53:37.863Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="封浩的个人网站">
+<meta name="twitter:title" content="建站遇到的各种问题">
+<meta name="twitter:description" content="服务器服务器是腾讯云服务器，选用系统是Windows server2012（有点后悔，应该选择Ubuntu14.04），域名是腾讯新网旗下购买的cn域名，以及阿里万网的site域名，前缀都是fenghaos。之所以选择腾讯云服务器，是因为价格适中，相同价位配置也比阿里云服务器更高。
+服务器环境如何连接服务器1.使用微软的远程桌面功能2.使用FileZilla
+服务器上安装git与windows桌面">
   
     <link rel="alternate" href="/atom.xml" title="封浩的个人网站" type="application/atom+xml">
   
@@ -63,9 +73,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-建站遇到的各种问题" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-建站遇到的各种问题" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/04/建站遇到的各种问题/" class="article-date">
   <time datetime="2016-11-04T12:28:06.000Z" itemprop="datePublished">2016-11-04</time>
@@ -78,8 +86,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/建站遇到的各种问题/">建站遇到的各种问题</a>
+    <h1 class="article-title" itemprop="name">
+      建站遇到的各种问题
     </h1>
   
 
@@ -102,90 +110,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-网页加载缓慢" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/04/网页加载缓慢/" class="article-date">
-  <time datetime="2016-11-04T11:25:37.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/网页加载缓慢/">网页加载缓慢</a>
-    </h1>
+    <a href="/2016/11/04/网页加载缓慢/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">网页加载缓慢</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="原因出在使用Google字库以及CSS"><a href="#原因出在使用Google字库以及CSS" class="headerlink" title="原因出在使用Google字库以及CSS"></a>原因出在使用Google字库以及CSS</h2><h3 id="解决办法：使用CDN加速的字库以及CSS"><a href="#解决办法：使用CDN加速的字库以及CSS" class="headerlink" title="解决办法：使用CDN加速的字库以及CSS"></a>解决办法：使用CDN加速的字库以及CSS</h3><h4 id="详细解决："><a href="#详细解决：" class="headerlink" title="详细解决："></a>详细解决：</h4><hr>
-<h5 id="1-更换字库引用位置"><a href="#1-更换字库引用位置" class="headerlink" title="1.更换字库引用位置"></a>1.更换字库引用位置</h5><p>在hexo\themes\主题\source\css_base\variable.styl中<br>找到<b>import url(“//fonts.googleapis.com/css?family=Lato:400,400italic”)</b>这句并注释掉<br><br>点击原文(<a href="http://www.jianshu.com/p/ffcdc4fec6ec" target="_blank" rel="external">http://www.jianshu.com/p/ffcdc4fec6ec</a>)<br><br></p>
-<h4 id="2-更换jQuery库的引用位置"><a href="#2-更换jQuery库的引用位置" class="headerlink" title="2.更换jQuery库的引用位置"></a>2.更换jQuery库的引用位置</h4><p>在hexo\hemes\主题\source\layout_partial\after-footer.ejs中将<br>    <b>ajax.googleapis.com/ajax/libs/jquery/x.x.x/jquery.min.js</b>中的链接，替换成CDN加速的链接。<br><br><a href="http://www.jianshu.com/p/ffcdc4fec6ec" target="_blank" rel="external">点击原文</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/04/网页加载缓慢/" data-id="civ3sbc2b0002qch78y4qn8l0" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-Hexo的简要使用命令" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/04/Hexo的简要使用命令/" class="article-date">
-  <time datetime="2016-11-04T10:42:08.000Z" itemprop="datePublished">2016-11-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/Hexo的简要使用命令/">Hexo的简要使用命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一次使用Hexo应该知道"><a href="#第一次使用Hexo应该知道" class="headerlink" title="第一次使用Hexo应该知道"></a>第一次使用Hexo应该知道</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"Title"</span></div></pre></td></tr></table></figure>
-<h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<h3 id="部署站点"><a href="#部署站点" class="headerlink" title="部署站点"></a>部署站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>希望自己<b>markdown</b>越写越熟练<br>噢，对了，在使用#表示标题的时候，应该在#后加一个空格</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/04/Hexo的简要使用命令/" data-id="civ3sbc200000qch7dgr8ws8w" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
