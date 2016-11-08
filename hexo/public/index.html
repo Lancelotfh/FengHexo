@@ -54,7 +54,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://fenghaos.site"></form>
@@ -64,6 +64,63 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-HTML-DOM学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/08/HTML-DOM学习/" class="article-date">
+  <time datetime="2016-11-08T07:04:14.000Z" itemprop="datePublished">2016-11-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/08/HTML-DOM学习/">HTML DOM学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="查找HTML元素"><a href="#查找HTML元素" class="headerlink" title="查找HTML元素"></a>查找HTML元素</h4><h5 id="通过id查找HTML元素"><a href="#通过id查找HTML元素" class="headerlink" title="通过id查找HTML元素"></a>通过id查找HTML元素</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var x=document.getElementById(<span class="string">"intro"</span>);</div></pre></td></tr></table></figure>
+<h4 id="通过标签名查找HTML元素"><a href="#通过标签名查找HTML元素" class="headerlink" title="通过标签名查找HTML元素"></a>通过标签名查找HTML元素</h4><p>查找id=”main”的元素，然后查找”main”中的所有<code><p></p></code>元素：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var x=docoment.getElementById(<span class="string">"main"</span>);</div><div class="line">var y=x.getElementByTagName(<span class="string">"p"</span>);</div></pre></td></tr></table></figure></p>
+<p><b>根据类名查找HTML元素在IE5,6,7,8中无效</b></p>
+<hr>
+<h4 id="改变HTML内容"><a href="#改变HTML内容" class="headerlink" title="改变HTML内容"></a>改变HTML内容</h4><p>通过使用innerHTML属性<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(<span class="string">"p1"</span>).innerHTML=<span class="string">"New texe"</span>;</div></pre></td></tr></table></figure></p>
+<h4 id="改变HTML元素的属性"><a href="#改变HTML元素的属性" class="headerlink" title="改变HTML元素的属性"></a>改变HTML元素的属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;Image&quot;).src=&quot;landscape.jpg&quot;;</div></pre></td></tr></table></figure>
+<h4 id="改变HTML样式"><a href="#改变HTML样式" class="headerlink" title="改变HTML样式"></a>改变HTML样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;p2&quot;).style.color=&quot;blue&quot;;</div></pre></td></tr></table></figure>
+<h4 id="HTML事件属性"><a href="#HTML事件属性" class="headerlink" title="HTML事件属性"></a>HTML事件属性</h4><ul>
+<li>onclick   单击响应</li>
+<li>onload    用户进入页面时触发</li>
+<li>onunload  用户离开页面时触发</li>
+<li><p>onchange  常结合对输入字段的验证来使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot; id=&quot;fname&quot; onchange=&quot;upperCase()&quot;&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>onmouseover 鼠标移至HTML元素上方</p>
+</li>
+<li>onmouseout  鼠标移出HTML元素</li>
+<li>onmousedown 鼠标在HTML元素上按下</li>
+<li>onmouseup   鼠标在HTML元素上释放</li>
+<li>onfocus     输入字段获得焦点时，改变其背景色</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/08/HTML-DOM学习/" data-id="civ97gcyv0001y0h7gd9vln2n" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-CDN相关" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -93,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/08/CDN相关/" data-id="civ93hq390000r8h7ynzwu449" class="article-share-link">Share</a>
+      <a data-url="http://fenghaos.site/2016/11/08/CDN相关/" data-id="civ97gcyx0002y0h77h5xwwt4" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -134,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/08/域名相关/" data-id="civ93hq3d0001r8h71x182ct9" class="article-share-link">Share</a>
+      <a data-url="http://fenghaos.site/2016/11/08/域名相关/" data-id="civ97gcyq0000y0h7exdggtt9" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -175,7 +232,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/04/建站遇到的各种问题/" data-id="civ93hq3j0004r8h7lu5bti6x" class="article-share-link">Share</a>
+      <a data-url="http://fenghaos.site/2016/11/04/建站遇到的各种问题/" data-id="civ97gcyz0003y0h715xwkbp5" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -214,7 +271,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/04/网页加载缓慢/" data-id="civ93hq3h0003r8h7r9u5a8lj" class="article-share-link">Share</a>
+      <a data-url="http://fenghaos.site/2016/11/04/网页加载缓慢/" data-id="civ97gcz00004y0h77nfjl7ye" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -255,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/04/Hexo的简要使用命令/" data-id="civ93hq3f0002r8h74olxtj6y" class="article-share-link">Share</a>
+      <a data-url="http://fenghaos.site/2016/11/04/Hexo的简要使用命令/" data-id="civ97gcz20005y0h7o64klikc" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -280,7 +337,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Arkiv</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
     </div>
@@ -290,9 +347,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Siste innlegg</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/11/08/HTML-DOM学习/">HTML DOM学习</a>
+          </li>
         
           <li>
             <a href="/2016/11/08/CDN相关/">CDN相关</a>
@@ -308,10 +369,6 @@
         
           <li>
             <a href="/2016/11/04/网页加载缓慢/">网页加载缓慢</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/04/Hexo的简要使用命令/">Hexo的简要使用命令</a>
           </li>
         
       </ul>
