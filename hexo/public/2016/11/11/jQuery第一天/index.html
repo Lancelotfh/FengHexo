@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>jQuery第一天 | 封浩的个人网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="getElementsByTagName(“p”)获取到的是所有p元素组成的数组后代元素、子元素的区别：父元素的下一代为子元素子元素只是后代元素的其中一代，后代元素还可以包含孙子元素、重孙子元素。改变&amp;lt;body&amp;gt;内所有&amp;lt;div&amp;gt;的背景色1$(&amp;quot;body div&amp;quot;).css(&amp;quot;background&amp;quot;,&amp;quot;#bbffaa&amp;quot">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery第一天">
+<meta property="og:url" content="http://fenghaos.site/2016/11/11/jQuery第一天/index.html">
+<meta property="og:site_name" content="封浩的个人网站">
+<meta property="og:description" content="getElementsByTagName(“p”)获取到的是所有p元素组成的数组后代元素、子元素的区别：父元素的下一代为子元素子元素只是后代元素的其中一代，后代元素还可以包含孙子元素、重孙子元素。改变&amp;lt;body&amp;gt;内所有&amp;lt;div&amp;gt;的背景色1$(&amp;quot;body div&amp;quot;).css(&amp;quot;background&amp;quot;,&amp;quot;#bbffaa&amp;quot">
+<meta property="og:updated_time" content="2016-11-11T11:37:44.084Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jQuery第一天">
+<meta name="twitter:description" content="getElementsByTagName(“p”)获取到的是所有p元素组成的数组后代元素、子元素的区别：父元素的下一代为子元素子元素只是后代元素的其中一代，后代元素还可以包含孙子元素、重孙子元素。改变&amp;lt;body&amp;gt;内所有&amp;lt;div&amp;gt;的背景色1$(&amp;quot;body div&amp;quot;).css(&amp;quot;background&amp;quot;,&amp;quot;#bbffaa&amp;quot">
+  
+    <link rel="alternate" href="/atom.xml" title="封浩的个人网站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//cdn.moefont.com/fonts/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">封浩的个人网站</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">HTML,CSS,JavaScript,Node.js</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://fenghaos.site"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-jQuery第一天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/11/jQuery第一天/" class="article-date">
+  <time datetime="2016-11-11T10:27:13.000Z" itemprop="datePublished">2016-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      jQuery第一天
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>getElementsByTagName(“p”)</code>获取到的是所有p元素组成的数组<br>后代元素、子元素的区别：<br>父元素的下一代为子元素<br>子元素只是后代元素的其中一代，后代元素还可以包含孙子元素、重孙子元素。<br><b>改变<code>&lt;body&gt;</code>内所有<code>&lt;div&gt;</code>的背景色</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;body div&quot;).css(&quot;background&quot;,&quot;#bbffaa&quot;);</div></pre></td></tr></table></figure></p>
+<p><b>改变<code>&lt;body&gt;</code>内子<code>&lt;div&gt;</code>的背景色</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;body &gt; div&quot;).css(&quot;background&quot;,&quot;#bbffaa&quot;);</div></pre></td></tr></table></figure></p>
+<p><b>改变class为one的下一个<code>&lt;div&gt;</code>同辈元素的背景色</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(&quot;.one + div&quot;).css(&quot;background&quot;,&quot;#bbffaa&quot;);</div><div class="line">等价于$(&quot;.one&quot;).next(&quot;div&quot;);</div></pre></td></tr></table></figure></p>
+<p><b>改变id为two的元素后面所有的<code>&lt;div&gt;</code>的背景色</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(&quot;#two ~ div&quot;).css(&quot;background&quot;,&quot;#bbffaa&quot;);</div><div class="line">等价于$(&quot;#two&quot;).nextAll(&quot;div&quot;);</div></pre></td></tr></table></figure></p>
+<hr>
+<p><b>过滤选择器</b><br><code>:first</code>选取第1个元素<br><code>:last</code>选取最后1个元素<br><code>:not(selector)</code>去除与给定选择器相匹配的元素<br><code>:even</code>选取索引是偶数的所有元素，索引从0开始<br><code>:odd</code>选取索引是奇数的所有元素，索引从0开始<br><code>:eq(index)</code>选取索引等于index的元素，索引从0开始<br><code>:gt(index)</code>选取索引大于index的元素，索引从0开始<br><code>:lt(index)</code>选取索引小于index的元素，索引从0开始<br><code>:header</code>选取所有的标题元素<br><code>:animated</code>选取当前正在执行动画的所有元素<br><code>:focus</code>选取当前获取焦点的元素 </p>
+<hr>
+<hr>
+<p><b>内容过滤选择器</b><br><code>:contains(text)</code>选取含有文本内容为”text”的元素<br><code>:empty</code>选取不包含子元素或者文本的空元素<br><code>:has(selector)</code>选取含有选择器所匹配的元素的元素<br><code>:parent</code>选取含有子元素或者文本的元素   </p>
+<hr>
+<hr>
+<p><b>可见性过滤选择器</b><br><code>:hidden</code>选取所有不可见的元素<br><code>:visible</code>选取所有可见的元素  </p>
+<hr>
+<hr>
+<p><b>属性滤波器</b><br><code>[attribute]</code>选取拥有此属性的元素<br><code>[attribute=value]</code>选取属性的值为value的元素<br><code>[attribute!=value]</code>选取属性的值不为value的元素<br><code>[attribute^=value]</code>选取属性的值以value开始的元素<br><code>[attribute$=value]</code>选取属性的值以value结束的元素<br><code>[attribute*=value]</code>选取属性的值含有value元素<br><code>[attribute|=value]</code>选取属性的值等于给定字符串或以该字符串为前缀(该字符串后跟一个连字符”-“)的元素<br><code>[attribute~=value]</code>选取属性用空格分隔的值中包含一个给定值的元素<br><code>[attribute1][attribute2][attribute3]</code>用属性选择器合并成一个复合属性选择器，满足多个条件。</p>
+<hr>
+<p><b>表单选择器</b><br><code>:input</code>选取所有的<code>&lt;input&gt;、&lt;textarea&gt;、&lt;select&gt;和&lt;button&gt;</code>元素<br><code>:text</code>选取所有单行文本框<br><code>:password</code>选取所有密码框<br><code>:radio</code>选取所有单选框<br><code>:checkbox</code>选取所有多选框<br><code>:submit</code>选取所有提交按钮  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/11/jQuery第一天/" data-id="civdpsfqs0002zoh7z6tanhif" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/10/jQuery-选择器/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">jQuery 选择器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/11/11/jQuery第一天/">jQuery第一天</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/10/jQuery-选择器/">jQuery 选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/10/初识jQuery/">初识jQuery</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/08/HTML-DOM添加和删除节点/">HTML DOM添加和删除节点</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/08/HTML-DOM学习/">HTML DOM学习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 封浩<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
