@@ -65,6 +65,72 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-jQuery-DOM应用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/16/jQuery-DOM应用/" class="article-date">
+  <time datetime="2016-11-16T10:28:07.000Z" itemprop="datePublished">2016-11-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/16/jQuery-DOM应用/">jQuery DOM应用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="DOM应用"><a href="#DOM应用" class="headerlink" title="DOM应用"></a>DOM应用</h3><p><b>添加元素</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var $li_1=$(&quot;&lt;li title=&apos;香蕉&apos;&gt;香蕉&lt;/li&gt;&quot;);</div><div class="line">var $li_2=$(&quot;&lt;li title=&apos;雪梨&apos;&gt;雪梨&lt;/li&gt;&quot;);</div><div class="line">$(&quot;ul&quot;).append($li_1)</div><div class="line">.append($li_2);</div></pre></td></tr></table></figure></p>
+<p><b>其他插入节点方法</b><br><code>append()</code>向每个匹配的元素内部追加内容<br><code>appendTo()</code>将所有匹配的元素追加到指定的元素中<br><code>prepend()</code>向每个匹配的元素内部前置内容<br><code>prependTo()</code>将所有匹配的元素前置到指定的元素中<br><code>after()</code>再每个匹配的元素之后插入内容<br><code>insertAfter()</code>将所有匹配的元素插入到指定元素之后的后面  </p>
+<hr>
+<p><b>不仅能将新创建的DOM元素插入到文档中，也能对原有的DOM元素进行移动</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var $one_li=$(&quot;ul li:eq(1)&quot;);</div><div class="line">var $two_li=$(&quot;ul li:eq(2)&quot;);</div><div class="line">$two_li.insertBefore($one_li);</div></pre></td></tr></table></figure></p>
+<p><b>删除节点</b></p>
+<ul>
+<li>remove()方法  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;ul li:eq(1)&quot;).remove();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>节点用<code>remove()</code>方法删除后，该节点的所有子节点同时被删除。返回值是一个指向已被删除节点的引用，因此以后可以再使用这些元素。<br><b>有选择性的删除节点</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(ul li).remove(&quot;li[title!=菠萝]&quot;);</div></pre></td></tr></table></figure></p>
+<ul>
+<li>detach()方法<br>不会把匹配的元素从jQuery对象中删除，不同的是，所有的绑定的事件、附加的数据等都会保留下来。  </li>
+<li>empty()方法<br>清空节点，清空元素中的所有后代节点。保留元素标签<br><b>复制节点</b></li>
+<li>clone()方法<br>复制节点，新复制的节点不具有任何行为。<br>如果需要新复制的节点具有以前节点的行为，使用<code>clone(true)</code><br><b>替换节点</b>  </li>
+<li><p>replaceWith方法()  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;p&quot;).replaceWith(&quot;&lt;strong&gt;你最不喜欢的水果是?&lt;/strong&gt;&quot;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>replaceAll方法()  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;&lt;strong&gt;你最不喜欢的水果是?&lt;/strong&gt;&quot;).replaceAll(&quot;p&quot;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><b>包裹节点</b>  </p>
+<ul>
+<li>wrap()方法<br>可以在文档中插入额外的结构化标记  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;strong&quot;).wrap(&quot;&lt;b&gt;&lt;/b&gt;&quot;);//用&lt;b&gt;标签把&lt;strong&gt;元素包裹起来</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>得到的结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;b&gt;&lt;strong title=&quot;选择你最喜欢的水果.&quot;&gt;你最喜欢的水果是？&lt;/strong&gt;&lt;/b&gt;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>warpInner()方法<br>将每一个匹配的元素的子内容（包含文本节点）用其他结构化的标记包裹起来。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/16/jQuery-DOM应用/" data-id="civkt8ims0003c4h7egcgpbue" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-jQuery-显示精简-完整菜单" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/16/jQuery-显示精简-完整菜单/" class="article-date">
@@ -101,7 +167,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/16/jQuery-显示精简-完整菜单/" data-id="civkodhui0000sgh7oq3997tk" class="article-share-link">Delen</a>
+      <a data-url="http://fenghaos.site/2016/11/16/jQuery-显示精简-完整菜单/" data-id="civkt8imq0002c4h7bnoxez2h" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -155,53 +221,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/11/jQuery第一天/" data-id="civkodhuu0004sgh75ddiypsq" class="article-share-link">Delen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-jQuery-选择器" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/10/jQuery-选择器/" class="article-date">
-  <time datetime="2016-11-10T06:46:25.000Z" itemprop="datePublished">2016-11-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/10/jQuery-选择器/">jQuery 选择器</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="jQuery元素选择器"><a href="#jQuery元素选择器" class="headerlink" title="jQuery元素选择器"></a>jQuery元素选择器</h4><p>jQuery使用<b>CSS</b>选择器来选取HTML元素。<br>例如:  </p>
-<ul>
-<li><code>$(“p”)选取<code>&lt;p&gt;</code>元素。</code></li>
-<li><code>$(“p.intro”)选取所有class=”intro”的<code>&lt;p&gt;</code>元素。</code></li>
-<li><code>$(“p#demo”)选取所有id=”demo”的<code>&lt;p&gt;</code>元素。</code><h4 id="jQuery属性选择器"><a href="#jQuery属性选择器" class="headerlink" title="jQuery属性选择器"></a>jQuery属性选择器</h4>jQuery使用XPath表达式来选择带有给定属性的元素。</li>
-<li><code>$(“[href]”)选取所有带有href属性的元素。</code></li>
-<li><code>$(“[href=’#’]”)选取所有带有href值等于”#”的元素。</code></li>
-<li><code>$(“[href!=’#’]”)选取所有带有href值不等于”#”的元素。</code></li>
-<li><code>$(“[href&amp;=’.jpg’]”)选取所有href值以”.jpg”结尾的元素。</code><h4 id="jQuery-CSS选择器"><a href="#jQuery-CSS选择器" class="headerlink" title="jQuery CSS选择器"></a>jQuery CSS选择器</h4>jQuery CSS选择器可用于改变HTML元素的CSS属性。<br>下面的例子把所有p元素的背景颜色更改为红色：<br><b>实例</b>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;p&quot;).css(&quot;background-color=&quot;,&quot;red&quot;);</div></pre></td></tr></table></figure></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/10/jQuery-选择器/" data-id="civkodhv10007sgh705qcs9ba" class="article-share-link">Delen</a>
+      <a data-url="http://fenghaos.site/2016/11/11/jQuery第一天/" data-id="civkt8in50009c4h73by90yqm" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -245,6 +265,10 @@
       <ul>
         
           <li>
+            <a href="/2016/11/16/jQuery-DOM应用/">jQuery DOM应用</a>
+          </li>
+        
+          <li>
             <a href="/2016/11/16/jQuery-显示精简-完整菜单/">jQuery 显示精简/完整菜单</a>
           </li>
         
@@ -258,10 +282,6 @@
         
           <li>
             <a href="/2016/11/10/初识jQuery/">初识jQuery</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/08/HTML-DOM添加和删除节点/">HTML DOM添加和删除节点</a>
           </li>
         
       </ul>

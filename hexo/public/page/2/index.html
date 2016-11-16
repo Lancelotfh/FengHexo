@@ -65,6 +65,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-jQuery-选择器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/10/jQuery-选择器/" class="article-date">
+  <time datetime="2016-11-10T06:46:25.000Z" itemprop="datePublished">2016-11-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/10/jQuery-选择器/">jQuery 选择器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="jQuery元素选择器"><a href="#jQuery元素选择器" class="headerlink" title="jQuery元素选择器"></a>jQuery元素选择器</h4><p>jQuery使用<b>CSS</b>选择器来选取HTML元素。<br>例如:  </p>
+<ul>
+<li><code>$(“p”)选取<code>&lt;p&gt;</code>元素。</code></li>
+<li><code>$(“p.intro”)选取所有class=”intro”的<code>&lt;p&gt;</code>元素。</code></li>
+<li><code>$(“p#demo”)选取所有id=”demo”的<code>&lt;p&gt;</code>元素。</code><h4 id="jQuery属性选择器"><a href="#jQuery属性选择器" class="headerlink" title="jQuery属性选择器"></a>jQuery属性选择器</h4>jQuery使用XPath表达式来选择带有给定属性的元素。</li>
+<li><code>$(“[href]”)选取所有带有href属性的元素。</code></li>
+<li><code>$(“[href=’#’]”)选取所有带有href值等于”#”的元素。</code></li>
+<li><code>$(“[href!=’#’]”)选取所有带有href值不等于”#”的元素。</code></li>
+<li><code>$(“[href&amp;=’.jpg’]”)选取所有href值以”.jpg”结尾的元素。</code><h4 id="jQuery-CSS选择器"><a href="#jQuery-CSS选择器" class="headerlink" title="jQuery CSS选择器"></a>jQuery CSS选择器</h4>jQuery CSS选择器可用于改变HTML元素的CSS属性。<br>下面的例子把所有p元素的背景颜色更改为红色：<br><b>实例</b>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;p&quot;).css(&quot;background-color=&quot;,&quot;red&quot;);</div></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/10/jQuery-选择器/" data-id="civkt8imy0005c4h78knzgnkz" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-初识jQuery" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/10/初识jQuery/" class="article-date">
@@ -119,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/10/初识jQuery/" data-id="civkodhuz0006sgh7t0z1am5f" class="article-share-link">Delen</a>
+      <a data-url="http://fenghaos.site/2016/11/10/初识jQuery/" data-id="civkt8in00007c4h7ha03vt4k" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -160,64 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/08/HTML-DOM添加和删除节点/" data-id="civkodhv70008sgh7vuepxpws" class="article-share-link">Delen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HTML-DOM学习" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/08/HTML-DOM学习/" class="article-date">
-  <time datetime="2016-11-08T07:04:14.000Z" itemprop="datePublished">2016-11-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/08/HTML-DOM学习/">HTML DOM学习</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="查找HTML元素"><a href="#查找HTML元素" class="headerlink" title="查找HTML元素"></a>查找HTML元素</h4><h5 id="通过id查找HTML元素"><a href="#通过id查找HTML元素" class="headerlink" title="通过id查找HTML元素"></a>通过id查找HTML元素</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var x=document.getElementById(<span class="string">"intro"</span>);</div></pre></td></tr></table></figure>
-<h4 id="通过标签名查找HTML元素"><a href="#通过标签名查找HTML元素" class="headerlink" title="通过标签名查找HTML元素"></a>通过标签名查找HTML元素</h4><p>查找id=”main”的元素，然后查找”main”中的所有<code>&lt;p&gt;</code>元素：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var x=docoment.getElementById(<span class="string">"main"</span>);</div><div class="line">var y=x.getElementByTagName(<span class="string">"p"</span>);</div></pre></td></tr></table></figure></p>
-<p><b>根据类名查找HTML元素在IE5,6,7,8中无效</b></p>
-<hr>
-<h4 id="改变HTML内容"><a href="#改变HTML内容" class="headerlink" title="改变HTML内容"></a>改变HTML内容</h4><p>通过使用innerHTML属性<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(<span class="string">"p1"</span>).innerHTML=<span class="string">"New texe"</span>;</div></pre></td></tr></table></figure></p>
-<h4 id="改变HTML元素的属性"><a href="#改变HTML元素的属性" class="headerlink" title="改变HTML元素的属性"></a>改变HTML元素的属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;Image&quot;).src=&quot;landscape.jpg&quot;;</div></pre></td></tr></table></figure>
-<h4 id="改变HTML样式"><a href="#改变HTML样式" class="headerlink" title="改变HTML样式"></a>改变HTML样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;p2&quot;).style.color=&quot;blue&quot;;</div></pre></td></tr></table></figure>
-<h4 id="HTML事件属性"><a href="#HTML事件属性" class="headerlink" title="HTML事件属性"></a>HTML事件属性</h4><ul>
-<li>onclick   单击响应</li>
-<li>onload    用户进入页面时触发</li>
-<li>onunload  用户离开页面时触发</li>
-<li><p>onchange  常结合对输入字段的验证来使用。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot; id=&quot;fname&quot; onchange=&quot;upperCase()&quot;&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>onmouseover 鼠标移至HTML元素上方</p>
-</li>
-<li>onmouseout  鼠标移出HTML元素</li>
-<li>onmousedown 鼠标在HTML元素上按下</li>
-<li>onmouseup   鼠标在HTML元素上释放</li>
-<li>onfocus     输入字段获得焦点时，改变其背景色</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/08/HTML-DOM学习/" data-id="civkodhuq0002sgh7ob8ywpob" class="article-share-link">Delen</a>
+      <a data-url="http://fenghaos.site/2016/11/08/HTML-DOM添加和删除节点/" data-id="civkt8imz0006c4h76x1bmfom" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -261,6 +250,10 @@
       <ul>
         
           <li>
+            <a href="/2016/11/16/jQuery-DOM应用/">jQuery DOM应用</a>
+          </li>
+        
+          <li>
             <a href="/2016/11/16/jQuery-显示精简-完整菜单/">jQuery 显示精简/完整菜单</a>
           </li>
         
@@ -274,10 +267,6 @@
         
           <li>
             <a href="/2016/11/10/初识jQuery/">初识jQuery</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/08/HTML-DOM添加和删除节点/">HTML DOM添加和删除节点</a>
           </li>
         
       </ul>

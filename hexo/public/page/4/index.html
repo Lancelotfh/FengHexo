@@ -65,6 +65,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-建站遇到的各种问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/04/建站遇到的各种问题/" class="article-date">
+  <time datetime="2016-11-04T12:28:06.000Z" itemprop="datePublished">2016-11-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/04/建站遇到的各种问题/">建站遇到的各种问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><p>服务器是腾讯云服务器，选用系统是Windows server2012（有点后悔，应该选择Ubuntu14.04），域名是腾讯新网旗下购买的cn域名，以及阿里万网的site域名，前缀都是fenghaos。<br>之所以选择腾讯云服务器，是因为价格适中，相同价位配置也比阿里云服务器更高。</p>
+<h3 id="服务器环境"><a href="#服务器环境" class="headerlink" title="服务器环境"></a>服务器环境</h3><h5 id="如何连接服务器"><a href="#如何连接服务器" class="headerlink" title="如何连接服务器"></a>如何连接服务器</h5><p>1.使用<b>微软的远程桌面功能</b><br>2.使用<b>FileZilla</b></p>
+<h5 id="服务器上安装git"><a href="#服务器上安装git" class="headerlink" title="服务器上安装git"></a>服务器上安装git</h5><p>与windows桌面版安装git大致相同<br>git上传代码需要SSH验证，需要在本地完成SSH密钥生成，再在github上进行验证，具体方法百度一大堆。</p>
+<h5 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h5><p>可以通过<b>Ftp</b>的方式，即使用<b>FileZilla</b>上传安装包至服务器，再通过<b>远程桌面</b>进行安装。<br>传送文件的过程中，可能会出现认证失败，或者服务器拒绝连接，这时一般是因为服务器端的<b>FileZilla</b>没有设置用户，添加用户即可。</p>
+<h5 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h5><p>安装方法很容易百度到，但是初始化的时候建议在桌面端先部署完成，再通过<b>FTP</b>上传至服务器<br>使用$hexo server -p 80启动服务，这样hexo就在localhost的80端口开放了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/04/建站遇到的各种问题/" data-id="civkt8ine000ac4h7j6jam9zf" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-网页加载缓慢" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/04/网页加载缓慢/" class="article-date">
@@ -94,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/04/网页加载缓慢/" data-id="civkodhvh000asgh74tougcry" class="article-share-link">Delen</a>
+      <a data-url="http://fenghaos.site/2016/11/04/网页加载缓慢/" data-id="civkt8inf000bc4h7g8tub2jh" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -135,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fenghaos.site/2016/11/04/Hexo的简要使用命令/" data-id="civkodhuo0001sgh7nchczm7j" class="article-share-link">Delen</a>
+      <a data-url="http://fenghaos.site/2016/11/04/Hexo的简要使用命令/" data-id="civkt8imo0001c4h7obv97rnu" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -179,6 +220,10 @@
       <ul>
         
           <li>
+            <a href="/2016/11/16/jQuery-DOM应用/">jQuery DOM应用</a>
+          </li>
+        
+          <li>
             <a href="/2016/11/16/jQuery-显示精简-完整菜单/">jQuery 显示精简/完整菜单</a>
           </li>
         
@@ -192,10 +237,6 @@
         
           <li>
             <a href="/2016/11/10/初识jQuery/">初识jQuery</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/08/HTML-DOM添加和删除节点/">HTML DOM添加和删除节点</a>
           </li>
         
       </ul>
