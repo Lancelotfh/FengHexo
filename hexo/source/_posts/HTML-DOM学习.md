@@ -9,7 +9,7 @@ tags:
 var x=document.getElementById("intro");
 ```
 #### 通过标签名查找HTML元素
-查找id="main"的元素，然后查找"main"中的所有<code><p></code>元素：
+查找id="main"的元素，然后查找"main"中的所有`<p>`元素：
 ``` bash
 var x=docoment.getElementById("main");
 var y=x.getElementByTagName("p");

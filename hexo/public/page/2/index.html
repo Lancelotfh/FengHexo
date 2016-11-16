@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>封浩的个人网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="封浩的个人网站">
+<meta property="og:url" content="http://fenghaos.site/page/2/index.html">
+<meta property="og:site_name" content="封浩的个人网站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="封浩的个人网站">
+  
+    <link rel="alternate" href="/atom.xml" title="封浩的个人网站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//cdn.moefont.com/fonts/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">封浩的个人网站</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">HTML,CSS,JavaScript,Node.js</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://fenghaos.site"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-初识jQuery" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/10/初识jQuery/" class="article-date">
+  <time datetime="2016-11-10T05:34:20.000Z" itemprop="datePublished">2016-11-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/10/初识jQuery/">初识jQuery</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>jQuery 是一个 JavaScript 函数库。</p>
+<ul>
+<li>HTML 元素选取</li>
+<li>HTML 元素操作</li>
+<li>CSS 操作</li>
+<li>HTML 事件函数</li>
+<li>JavaScript 特效和动画</li>
+<li>HTML DOM 遍历和修改</li>
+<li>AJAX</li>
+<li>Utilities<h4 id="页面中添加jQuery库"><a href="#页面中添加jQuery库" class="headerlink" title="页面中添加jQuery库"></a>页面中添加jQuery库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="CDN地址"><a href="#CDN地址" class="headerlink" title="CDN地址"></a>CDN地址</h5><p><b>标准版</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;//cdn.bootcss.com/jquery/3.1.1/jquery.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><b>迷你版</b><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;//cdn.bootcss.com/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>####基础语法：<br><b><code>$(selector).action()</code></b></p>
+<ul>
+<li>美元符号定义jQuery</li>
+<li>选择符(selector)”查询”和”查找”HTML元素</li>
+<li>jQuery的action()执行对元素的操作<br>例如：</li>
+<li><code>$(this).hide()</code></li>
+<li><code>$(“p”).hide()</code><br><b>TIP:</b>jQuery使用的语法是XPath与CSS选择器语法的组合。<br>所有的jQuery函数应位于一个document ready函数中:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(document).ready(function()&#123;</div><div class="line">//jQuery functions go here</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这样做是为了防止在<b>文档没有完全加载前</b>就运行函数:</p>
+<ul>
+<li>试图隐藏一个不存在的元素</li>
+<li>获得未完全加载的图像的大小</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/10/初识jQuery/" data-id="civkodhuz0006sgh7t0z1am5f" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HTML-DOM添加和删除节点" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/08/HTML-DOM添加和删除节点/" class="article-date">
+  <time datetime="2016-11-08T12:18:01.000Z" itemprop="datePublished">2016-11-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/08/HTML-DOM添加和删除节点/">HTML DOM添加和删除节点</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="创建新的HTML元素"><a href="#创建新的HTML元素" class="headerlink" title="创建新的HTML元素"></a>创建新的HTML元素</h4><p>先创建该元素（元素节点），然后再向一个已存在的元素追加该元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;div id=&quot;div1&quot;&gt;</div><div class="line">&lt;p id=&quot;p1&quot;&gt;这是一个段落。&lt;/p&gt;</div><div class="line">&lt;p id=&quot;p2&quot;&gt;这是另一个段落。&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">var para=document.createElement(&quot;p&quot;);</div><div class="line">var node=document.createTextNode(&quot;这是新段落。&quot;);</div><div class="line">para.appendChild(node);</div><div class="line"></div><div class="line">var element=document.getElementById(&quot;div1&quot;);</div><div class="line">element.appendChild(para);</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<hr>
+<h4 id="删除已有的HTML元素"><a href="#删除已有的HTML元素" class="headerlink" title="删除已有的HTML元素"></a>删除已有的HTML元素</h4><p>必须首先获得该元素的父元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;div id=&quot;div1&quot;&gt;</div><div class="line">&lt;p id=&quot;p1&quot;&gt;这是一个段落。&lt;/p&gt;</div><div class="line">&lt;p id=&quot;p2&quot;&gt;这是另一个段落。&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">var parent=document.getElementById(&quot;div1&quot;);</div><div class="line">var child=document.getElementById(&quot;p1&quot;);</div><div class="line">parent.removeChild(child);</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p><b>在不引用父元素的情况下删除某个元素 </b><br>常用解决方案：找到希望删除的子元素，然后使用parentNode属性来找到父元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var child=document.getElementById(&quot;p1&quot;);</div><div class="line">child.parentNode.removeChild(child);</div></pre></td></tr></table></figure></p>
+<p>来源：<a href="www.w3school.com.cn">w3school</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/08/HTML-DOM添加和删除节点/" data-id="civkodhv70008sgh7vuepxpws" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HTML-DOM学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/08/HTML-DOM学习/" class="article-date">
+  <time datetime="2016-11-08T07:04:14.000Z" itemprop="datePublished">2016-11-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/08/HTML-DOM学习/">HTML DOM学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="查找HTML元素"><a href="#查找HTML元素" class="headerlink" title="查找HTML元素"></a>查找HTML元素</h4><h5 id="通过id查找HTML元素"><a href="#通过id查找HTML元素" class="headerlink" title="通过id查找HTML元素"></a>通过id查找HTML元素</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var x=document.getElementById(<span class="string">"intro"</span>);</div></pre></td></tr></table></figure>
+<h4 id="通过标签名查找HTML元素"><a href="#通过标签名查找HTML元素" class="headerlink" title="通过标签名查找HTML元素"></a>通过标签名查找HTML元素</h4><p>查找id=”main”的元素，然后查找”main”中的所有<code>&lt;p&gt;</code>元素：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var x=docoment.getElementById(<span class="string">"main"</span>);</div><div class="line">var y=x.getElementByTagName(<span class="string">"p"</span>);</div></pre></td></tr></table></figure></p>
+<p><b>根据类名查找HTML元素在IE5,6,7,8中无效</b></p>
+<hr>
+<h4 id="改变HTML内容"><a href="#改变HTML内容" class="headerlink" title="改变HTML内容"></a>改变HTML内容</h4><p>通过使用innerHTML属性<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(<span class="string">"p1"</span>).innerHTML=<span class="string">"New texe"</span>;</div></pre></td></tr></table></figure></p>
+<h4 id="改变HTML元素的属性"><a href="#改变HTML元素的属性" class="headerlink" title="改变HTML元素的属性"></a>改变HTML元素的属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;Image&quot;).src=&quot;landscape.jpg&quot;;</div></pre></td></tr></table></figure>
+<h4 id="改变HTML样式"><a href="#改变HTML样式" class="headerlink" title="改变HTML样式"></a>改变HTML样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;p2&quot;).style.color=&quot;blue&quot;;</div></pre></td></tr></table></figure>
+<h4 id="HTML事件属性"><a href="#HTML事件属性" class="headerlink" title="HTML事件属性"></a>HTML事件属性</h4><ul>
+<li>onclick   单击响应</li>
+<li>onload    用户进入页面时触发</li>
+<li>onunload  用户离开页面时触发</li>
+<li><p>onchange  常结合对输入字段的验证来使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;text&quot; id=&quot;fname&quot; onchange=&quot;upperCase()&quot;&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>onmouseover 鼠标移至HTML元素上方</p>
+</li>
+<li>onmouseout  鼠标移出HTML元素</li>
+<li>onmousedown 鼠标在HTML元素上按下</li>
+<li>onmouseup   鼠标在HTML元素上释放</li>
+<li>onfocus     输入字段获得焦点时，改变其背景色</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fenghaos.site/2016/11/08/HTML-DOM学习/" data-id="civkodhuq0002sgh7ob8ywpob" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">__('next') &raquo;</a>
+  </nav>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/11/16/jQuery-显示精简-完整菜单/">jQuery 显示精简/完整菜单</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/11/jQuery第一天/">jQuery第一天</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/10/jQuery-选择器/">jQuery 选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/10/初识jQuery/">初识jQuery</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/08/HTML-DOM添加和删除节点/">HTML DOM添加和删除节点</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 封浩<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
